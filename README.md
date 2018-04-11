@@ -15,3 +15,11 @@ How you do this is up to you. Think about how easy your rate limiter will be to 
 
 - Ruby  2.5.1
 - Rails 5.2.0
+
+## Run API
+
+`rails server`
+
+## Run Tests
+
+`bundle exec rspec`
