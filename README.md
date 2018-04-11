@@ -1,24 +1,17 @@
-# README
+# Rate Limit
+Rate limiting Rails API endpoint by utilising Redis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Problem Description
 
-Things you may want to cover:
+For this challenge, you'll start off by creating a new rails application. You can include any gems or other libraries you consider will be helpful but don’t use a gem for the rate limiting.
 
-* Ruby version
+Create a new controller, perhaps called "home", with an index method. This should return only the text string "ok".
 
-* System dependencies
+The challenge is to implement rate limiting on this route. Limit it such that a requester can only make 100 requests per hour. After the limit has been reached, return a 429 with the text "Rate limit exceeded. Try again in #{n} seconds".
 
-* Configuration
+How you do this is up to you. Think about how easy your rate limiter will be to maintain and control. Write what you consider to be production-quality code, with comments and tests if and when you consider them necessary.
 
-* Database creation
+## Dependencies
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby  2.5.1
+- Rails 5.2.0
