@@ -16,9 +16,24 @@ How you do this is up to you. Think about how easy your rate limiter will be to 
 - Ruby  2.5.1
 - Rails 5.2.0
 
-## Run API
+## Install Redis
+
+`brew install redis`
+
+## Start Redis
+
+`brew services start redis`
+
+## Run API server
 
 `rails server`
+
+## Hit the server for 100 times to reach rate limit
+
+`repeat 100 { curl http://localhost:3000/home }`
+
+## And try again last time to see return 429 instead of 200
+`curl http://localhost:3000/home`
 
 ## Run Tests
 
