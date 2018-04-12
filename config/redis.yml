@@ -7,7 +7,8 @@ development:
 
 test:
   <<: *default
-
+  db: 1
 production:
   <<: *default
+  db: 2
   url: redis://h:pabdfbee6072365883b5709b006398912da572f5efcc693d70f56ec58d67eec77@ec2-52-18-191-147.eu-west-1.compute.amazonaws.com:20539
