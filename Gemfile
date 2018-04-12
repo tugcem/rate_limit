@@ -16,6 +16,9 @@ gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use redis for tracking number of requests per IP
+gem 'redis', '~> 4.0', '>= 4.0.1'
+gem 'redis-namespace'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

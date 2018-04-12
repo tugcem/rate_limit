@@ -1,0 +1,13 @@
+default: &default
+  url: redis://localhost:6379
+  db: 0
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  url: redis://h:pabdfbee6072365883b5709b006398912da572f5efcc693d70f56ec58d67eec77@ec2-52-18-191-147.eu-west-1.compute.amazonaws.com:20539
