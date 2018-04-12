@@ -7,7 +7,7 @@ RSpec.describe Middleware::RateLimiter do
   let(:subject) { Middleware::RateLimiter.new(app) }
   let(:request) { Rack::MockRequest.new(subject) }
 
-  100.times do |n|
+  RATE_LIMIT.times do |n|
     describe "#call" do
       it "should return OK response" do
         response = request.get("/home.json", "REMOTE_ADDR" => "IP" )
